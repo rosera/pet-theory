@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Patrick - IT",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^4.4.5"
+  }
 }
