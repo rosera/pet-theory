@@ -4,7 +4,7 @@ firebase.auth().onAuthStateChanged(function(newUser) {
   user = newUser;
   if (user) {
     const db = firebase.firestore();
-    const appColl = db.collection('pets').doc(user.email).collection('appointments');
+    const appColl = db.collection('customers').doc(user.email).collection('appointments');
     appColl.orderBy('time').onSnapshot(function(snapshot) {
       const div = document.getElementById('appointments');
       div.innerHTML = '';
@@ -27,7 +27,7 @@ document.getElementById('makeAppointment').addEventListener('click', function(ev
   const millis = parseInt(timeslots.selectedOptions[0].value);
   if (millis > 0) {
     const db = firebase.firestore();
-    db.collection('pets').doc(user.email).collection('appointments').add({
+    db.collection('customers').doc(user.email).collection('appointments').add({
       time: millis
     })
     timeslots.remove(timeslots.selectedIndex);

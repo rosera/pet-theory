@@ -1,0 +1,27 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Theory appointments</title>
+    <script src="/__/firebase/6.4.2/firebase-app.js"></script>
+    <script src="/__/firebase/6.4.2/firebase-auth.js"></script>
+    <script src="/__/firebase/6.4.2/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="message">
+      <h2>Scheduled appointments</h2>
+      <div id="appointments"></div>
+      <hr/>
+      <h2>Schedule a new appointment</h2>
+      <select id="timeslots">
+        <option value="0">Choose time</option>
+      </select>
+      <br><br>
+      <button id="makeAppointment">Schedule</button>
+    </div>
+    <script src="appointments.js"></script>
+  </body>
+</html>
