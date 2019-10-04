@@ -1,0 +1,15 @@
+{
+  "name": "lab02",
+  "version": "1.0.0",
+  "description": "This is lab02 of the Pet Theory labs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Patrick - IT",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-tools": "^7.4.0"
+  }
+}
