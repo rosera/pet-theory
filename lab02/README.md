@@ -6,9 +6,11 @@ Twelve years ago, Lily started the Pet Theory chain of veterinary clinics. The P
 
 Welcome to the Pet Theory Quest.
 
-# Author: Martin Ormander
+# Author: 
+Martin Ormander
 
-# Description: Qwiklabs Quest based on the presentation "Pet Theory"
+# Description: 
+Qwiklabs Quest based on the presentation "Pet Theory"
 
 ## Lab 02
 
