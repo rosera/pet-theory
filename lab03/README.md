@@ -16,3 +16,9 @@ Qwiklabs Quest based on the presentation "Pet Theory"
 
 ## Lab 03
 
+In the lab, you will learn how to build a web app based on Cloud Run, that automatically converts files stored in Google Drive into PDFs stored in segregated Google Drive folders. 
+
+* Develop an application to create a PDF
+* How to create a Dockerfile for a NodeJS application
+* Learn to deploy Cloud Run application
+* Trigger a Cloud Run server based on Cloud Storage
