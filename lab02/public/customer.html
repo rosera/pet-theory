@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Theory portal</title>
+    <script src="/__/firebase/6.4.2/firebase-app.js"></script>
+    <script src="/__/firebase/6.4.2/firebase-auth.js"></script>
+    <script src="/__/firebase/6.4.2/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="message">
+      <h2>Profile</h2>
+      <table>
+        <tr>
+          <td>Customer email</td>
+          <td id="customerEmail"></td>
+        </tr>
+        <tr>
+        <td>Customer name</td>
+          <td><input id="customerName"></td>
+        </tr>
+        <tr>
+          <td>Customer phone</td>
+          <td><input id="customerPhone"></td>
+        </tr>
+      </table>
+      <br><br>
+      <button id="saveProfile">Save profile</button>
+      <br><br>
+      <a href="appointments.html">Appointments</a>
+    </div>
+    <script src="customer.js"></script>
+  </body>
+</html>
