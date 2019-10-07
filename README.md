@@ -12,10 +12,10 @@ Martin Ormander
 # Description: 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
-## Lab 01 
-## Lab 02 
-## Lab 03
-## Lab 04
-## Lab 05
+## GSP642 Lab 01 - Migrating to a Firestore database 
+## GSP643 Lab 02 - Web Hosting and authentication with Firebase
+## GSP644 Lab 03 - Building a PDF creation service with Cloud Run 
+## GSP645 Lab 04 - Developing a REST API with Cloud Run
+## GSP650 Lab 05 - Building an asynchronous reporting service  
 
 
