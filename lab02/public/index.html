@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Theory portal log-in</title>
+    <script src="/__/firebase/6.4.2/firebase-app.js"></script>
+    <script src="/__/firebase/6.4.2/firebase-auth.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script>
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      var uiConfig = {
+        callbacks: {
+          signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+            return true;
+          },
+          uiShown: function() {
+            document.getElementById('loader').style.display = 'none';
+          }
+        },
+        signInSuccessUrl: 'customer.html',
+        signInOptions: [
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+          firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+          firebase.auth.GithubAuthProvider.PROVIDER_ID,
+          firebase.auth.EmailAuthProvider.PROVIDER_ID,
+          firebase.auth.PhoneAuthProvider.PROVIDER_ID
+        ]
+      };
+      ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+  </head>
+  <body>
+    <div id="message">
+      <div id="firebaseui-auth-container"></div>
+      <div id="loader">Loading...</div>
+    </div>
+  </body>
+</html>
