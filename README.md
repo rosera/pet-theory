@@ -9,13 +9,20 @@ Welcome to the Pet Theory Quest.
 # Author: 
 Martin Ormander
 
+* Born and raised in Sweden.
+* Lived in Silicon Valley for 19 years.
+* Three startups as a software engineer.
+* Worked at Google for 13 years.
+* Cloud Developer Advocate.
+
+
 # Description: 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
-## GSP642 Lab 01 - Migrating to a Firestore database 
-## GSP643 Lab 02 - Web Hosting and authentication with Firebase
-## GSP644 Lab 03 - Building a PDF creation service with Cloud Run 
-## GSP645 Lab 04 - Developing a REST API with Cloud Run
-## GSP650 Lab 05 - Building an asynchronous reporting service  
+### [GSP642 Lab 01 - Migrating to a Firestore database](https://github.com/rosera/pettheory/tree/master/lab01) 
+### [GSP643 Lab 02 - Web Hosting and authentication with Firebase](https://github.com/rosera/pettheory/tree/master/lab02)
+### [GSP644 Lab 03 - Building a PDF creation service with Cloud Run](https://github.com/rosera/pettheory/tree/master/lab03) 
+### [GSP645 Lab 04 - Developing a REST API with Cloud Run](https://github.com/rosera/pettheory/tree/master/lab04)
+### [GSP650 Lab 05 - Building an asynchronous reporting service](https://github.com/rosera/pettheory/tree/master/lab05)  
 
 
