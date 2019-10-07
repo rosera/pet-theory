@@ -1,0 +1,19 @@
+<html lang="en">
+  <head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="[CLIENT-ID]">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <br>
+    <button id="signOut">Sign out</button>
+    <br><br>
+    <input id="customerId" placeholder="Customer ID">
+    <button id="callApi">Call Pet Theory REST API</button>
+    <script src="index.js"></script>
+    <br><br>
+    <div id="status"></div>
+  </body>
+</html>
+
