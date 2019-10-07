@@ -13,13 +13,13 @@ Martin Ormander
 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
-## Lab 01
+## GSP642 Lab 01 - Migrating to a Firestore database
 
 Pet Theory have a legacy database and they want to move this to Firestore. Can you help them migrate their data by setting up a new database and populating it with customer data?
 
-In this lab you will be task with the following activities:
+In this lab you will be tasked with the following activities:
 
 * Create a Firestore database
-* Create a CSV file for the purpose of testing the database load process
-* Repurpose an application to Upload the CSV test data to the Firestore database
-* Set up role permissions for the development team
+* Create a comma separated values (CSV) file for the purpose of testing the database load process
+* Repurpose an NodeJS application to Upload the CSV test data to the Firestore database
+* Specify role permissions for the development team
