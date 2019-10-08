@@ -7,13 +7,18 @@ Twelve years ago, Lily started the Pet Theory chain of veterinary clinics. The P
 Welcome to the Pet Theory Quest.
 
 # Author: 
-Martin Ormander
 
-* Born and raised in Sweden.
-* Lived in Silicon Valley for 19 years.
-* Three startups as a software engineer.
-* Worked at Google for 13 years.
-* Cloud Developer Advocate.
+![Martin Ormander](https://github.com/rosera/pettheory/blob/master/images/mo_photo.png "Martin Ormander")
+
+* Born and raised in Sweden
+* Lived in Silicon Valley for 19 years
+* Three startups as a software engineer
+* Worked at Google for 13 years
+* Cloud Developer Advocate 
+
+Social Media: 
+
+Twitter: [@martinormander](https://twitter.com/martinormander)
 
 
 # Description: 
