@@ -1,43 +1,34 @@
-const {readFile} = require('fs').promises;
-const {promisify} = require('util');
-const Firestore = require('@google-cloud/firestore');
-const parse = promisify(require('csv-parse'));
+const fs = require('fs');
+const faker = require('faker');
 
-if (process.argv.length < 3) {
-  console.error('Please include a path to a csv file');
+function getRandomCustomerEmail(firstName, lastName) {
+  const provider = faker.internet.domainName();
+  const email = faker.internet.email(firstName, lastName, provider);
+  return email.toLowerCase();
+}
+
+async function createTestData(recordCount) {
+  const fileName = `customers_${recordCount}.csv`;
+  var f = fs.createWriteStream(fileName);
+  f.write('id,name,email,phone\n')
+  for (let i=0; i<recordCount; i++) {
+    const id = faker.random.number();
+    const firstName = faker.name.firstName();
+    const lastName = faker.name.lastName();
+    const name = `${firstName} ${lastName}`;
+    const email = getRandomCustomerEmail(firstName, lastName);
+    const phone = faker.phone.phoneNumber();
+    f.write(`${id},${name},${email},${phone}\n`);
+  }
+  console.log(`Created file ${fileName} containing ${recordCount} records.`);
+}
+
+recordCount = parseInt(process.argv[2]);
+if (process.argv.length != 3 || recordCount < 1 || isNaN(recordCount)) {
+  console.error('Include the number of test data records to create. Example:');
+  console.error('    node createTestData.js 100');
   process.exit(1);
 }
 
-const db = new Firestore();
-
-function writeToFirestore(records) {
-  const batchCommits = [];
-  let batch = db.batch();
-  records.forEach((record, i) => {
-    var docRef = db.collection('pets').doc(record.customerEmail);
-    batch.set(docRef, record);
-    if ((i + 1) % 500 === 0) {
-      console.log(`Writing record ${i + 1}`);
-      batchCommits.push(batch.commit());
-      batch = db.batch();
-    }
-  });
-  batchCommits.push(batch.commit());
-  return Promise.all(batchCommits);
-}
-
-async function importCsv(csvFileName) {
-  const fileContents = await readFile(csvFileName, 'utf8');
-  const records = await parse(fileContents, { columns: true });
-  try {
-    await writeToFirestore(records);
-  }
-  catch (e) {
-    console.error(e);
-    process.exit(1);
-  }
-  console.log(`Wrote ${records.length} records`);
-}
-
-importCsv(process.argv[2]).catch(e => console.error(e));
+createTestData(recordCount);
 
