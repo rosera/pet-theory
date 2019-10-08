@@ -18,8 +18,10 @@ Welcome to the Pet Theory Quest.
 
 Social Media: 
 
-Twitter: [@martinormander](https://twitter.com/martinormander)
-
+Twitter: 
+LinkedIn:
+Instagram:
+Facebook:
 
 # Description: 
 Qwiklabs Quest based on the presentation "Pet Theory"
