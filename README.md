@@ -18,10 +18,10 @@ Welcome to the Pet Theory Quest.
 
 Social Media: 
 
-Twitter: 
-LinkedIn:
-Instagram:
-Facebook:
+* Twitter: 
+* LinkedIn:
+* Instagram:
+* Facebook:
 
 # Description: 
 Qwiklabs Quest based on the presentation "Pet Theory"
