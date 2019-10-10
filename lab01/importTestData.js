@@ -1,6 +1,6 @@
+const {promisify} = require('util');
 const parse       = promisify(require('csv-parse'));
 const {readFile}  = require('fs').promises;
-const {promisify} = require('util');
 
 if (process.argv.length < 3) {
   console.error('Please include a path to a csv file');
