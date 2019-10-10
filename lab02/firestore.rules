@@ -1,11 +1,10 @@
 service cloud.firestore {
-	match /databases/{database}/documents {
-  	match /pets/{email} {
-    	allow read, write: if request.auth.token.email == email;
+match /databases/{database}/documents {
+  match /customers/{email} {
+    allow read, write: if request.auth.token.email == email;
     }
-  	match /pets/{email}/{document=**} {
-    	allow read, write: if request.auth.token.email == email;
+  match /customers/{email}/{document=**} {
+    allow read, write: if request.auth.token.email == email;
     }
   }
 }
-
