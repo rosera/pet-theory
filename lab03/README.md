@@ -8,7 +8,7 @@ Welcome to the Pet Theory Quest.
 
 # Author: 
 
-Martin Ormander
+Martin Omander
 
 # Description: 
 
