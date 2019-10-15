@@ -8,7 +8,7 @@ Welcome to the Pet Theory Quest.
 
 # Author: 
 
-![Martin Ormander](https://github.com/rosera/pettheory/blob/master/images/mo_photo.png "Martin Ormander")
+![Martin Omander](https://github.com/rosera/pettheory/blob/master/images/mo_photo.png "Martin Omander")
 
 * Born and raised in Sweden
 * Lived in Silicon Valley for 19 years
@@ -18,10 +18,11 @@ Welcome to the Pet Theory Quest.
 
 Social Media: 
 
-* Twitter: 
+* Twitter: @martinomander
 * LinkedIn:
 * Instagram:
 * Facebook:
+* Youtube: https://www.youtube.com/watch?v=lscLHHwFKAA
 
 # Description: 
 Qwiklabs Quest based on the presentation "Pet Theory"
