@@ -8,11 +8,13 @@ Welcome to the Pet Theory Quest.
 
 # Author: 
 
-Martin Ormander
+Martin Omander
 
 # Description: 
 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
 ## Lab 05
+
+
 
