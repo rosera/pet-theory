@@ -6,13 +6,21 @@ Twelve years ago, Lily started the Pet Theory chain of veterinary clinics. The P
 
 Welcome to the Pet Theory Quest.
 
-# Author: 
+## Author: 
 
 Martin Omander
 
-# Description: 
+## Description: 
 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
-## Lab 04
+### [GSP645 Lab 04 - Share Data Securely via a REST API using Cloud Run](https://google.qwiklabs.com/catalog_lab/2167)
 
+Pet Theory want to enable 3rd party data access for customer records without exposing personal identifiable information (PII). Can you help the team to build a proof of concept REST API that will securely provide access to customer records?
+
+In this lab you will be tasked with the following activities:
+
+* Build a REST API handler
+* Import customer test data
+* Connect the REST API to the test data
+* Enable authenticate to the REST API

@@ -6,15 +6,15 @@ Twelve years ago, Lily started the Pet Theory chain of veterinary clinics. The P
 
 Welcome to the Pet Theory Quest.
 
-# Author: 
+## Author: 
 
 Martin Omander
 
-# Description: 
+## Description: 
 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
-## Lab 03
+### [GSP644 Lab 03 - Build a Serverless App with Cloud Run that Creates PDF files](https://google.qwiklabs.com/catalog_lab/2161)
 
 In the lab, you will learn how to build a web app based on Cloud Run, that automatically converts files stored in Google Drive into PDFs stored in segregated Google Drive folders. 
 

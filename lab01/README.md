@@ -6,14 +6,14 @@ Twelve years ago, Lily started the Pet Theory chain of veterinary clinics. The P
 
 Welcome to the Pet Theory Quest.
 
-# Author: 
+## Author: 
 Martin Omander
 
-# Description: 
+## Description: 
 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
-## GSP642 Lab 01 - Migrating to a Firestore database
+### [GSP642 Lab 01 - Migrating to a Firestore database](https://google.qwiklabs.com/catalog_lab/2163)
 
 Pet Theory have a legacy database and they want to move this to Firestore. Can you help them migrate their data by setting up a new database and populating it with customer data?
 

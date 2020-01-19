@@ -6,15 +6,21 @@ Twelve years ago, Lily started the Pet Theory chain of veterinary clinics. The P
 
 Welcome to the Pet Theory Quest.
 
-# Author: 
+## Author: 
 
 Martin Omander
 
-# Description: 
+## Description: 
 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
-## Lab 05
+### [GSP650 Lab 05 - Build a Resilient, Asynchronous System with Cloud Run and Cloud PubSub](https://google.qwiklabs.com/catalog_lab/2164)
 
+Pet Theory would like to automate the process of sharing client test results. They have experienced an increased volume of appointments and so would like to remove the bottleneck of manually administering test results. Instead they would like a system to be able to process the lab results automatically.
 
+In this lab you will be tasked with the following activities:
 
+* Create a Lab Report Service
+* Create a Communication Service for Email/SMS
+* Enable data resiliency
+* Test service components

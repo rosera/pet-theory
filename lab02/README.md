@@ -6,13 +6,13 @@ Twelve years ago, Lily started the Pet Theory chain of veterinary clinics. The P
 
 Welcome to the Pet Theory Quest.
 
-# Author: 
+## Author: 
 Martin Omander
 
-# Description: 
+## Description: 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
-## Lab 02
+### [GSP643 Lab 02 - Build a Serverless Web App with Firebase](https://google.qwiklabs.com/catalog_lab/2166)
 
 In this lab, you will learn how to:
 
