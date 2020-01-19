@@ -14,7 +14,7 @@ Martin Omander
 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
-### [GSP645 Lab 04 - Share Data Securely via a REST API using Cloud Run](https://google.qwiklabs.com/catalog_lab/2167)
+[GSP645 Lab 04 - Share Data Securely via a REST API using Cloud Run](https://google.qwiklabs.com/catalog_lab/2167)
 
 Pet Theory want to enable 3rd party data access for customer records without exposing personal identifiable information (PII). Can you help the team to build a proof of concept REST API that will securely provide access to customer records?
 

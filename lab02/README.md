@@ -12,7 +12,7 @@ Martin Omander
 ## Description: 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
-### [GSP643 Lab 02 - Build a Serverless Web App with Firebase](https://google.qwiklabs.com/catalog_lab/2166)
+[GSP643 Lab 02 - Build a Serverless Web App with Firebase](https://google.qwiklabs.com/catalog_lab/2166)
 
 In this lab, you will learn how to:
 
