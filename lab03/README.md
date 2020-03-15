@@ -10,6 +10,10 @@ Welcome to the Pet Theory Quest.
 
 Martin Omander
 
+## Architecture
+
+![GSP644: Create a PDF with Cloud Run](https://github.com/rosera/pettheory/blob/master/images/gsp644-create-pdf.png "Pet Theory - GSP644")
+
 ## Description: 
 
 Qwiklabs Quest based on the presentation "Pet Theory"
