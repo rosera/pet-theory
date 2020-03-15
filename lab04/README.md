@@ -10,6 +10,10 @@ Welcome to the Pet Theory Quest.
 
 Martin Omander
 
+## Architecture
+
+![GSP645: Cloud Run REST API + Firebase Authentication](https://github.com/rosera/pettheory/blob/master/images/gsp645-rest-api.png "Pet Theory - GSP645")
+
 ## Description: 
 
 Qwiklabs Quest based on the presentation "Pet Theory"
