@@ -10,6 +10,10 @@ Welcome to the Pet Theory Quest.
 
 Martin Omander
 
+## Architecture
+
+![GSP650: Build a resilient asynchronous system](https://github.com/rosera/pettheory/blob/master/images/gsp650-async-system.png "Pet Theory - GSP650")
+
 ## Description: 
 
 Qwiklabs Quest based on the presentation "Pet Theory"
