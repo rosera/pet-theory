@@ -9,6 +9,10 @@ Welcome to the Pet Theory Quest.
 ## Author: 
 Martin Omander
 
+## Architecture
+
+![GSP642: Migrating Data to a Firestore Database](https://github.com/rosera/pettheory/blob/master/images/gsp642-migrating-data.png "Pet Theory - GSP642")
+
 ## Description: 
 
 Qwiklabs Quest based on the presentation "Pet Theory"
