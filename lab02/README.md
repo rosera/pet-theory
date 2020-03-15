@@ -9,6 +9,10 @@ Welcome to the Pet Theory Quest.
 ## Author: 
 Martin Omander
 
+## Architecture
+
+![GSP643: Buidling a Serverless App with Firebase + Firestore](https://github.com/rosera/pettheory/blob/master/images/gsp643-firebase.png "Pet Theory - GSP643")
+
 ## Description: 
 Qwiklabs Quest based on the presentation "Pet Theory"
 
