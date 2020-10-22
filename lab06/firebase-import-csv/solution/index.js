@@ -6,13 +6,11 @@ const {Logging} = require('@google-cloud/logging');
 
 
 // Creates a Logging client
-const logName = 'qwiklabs-logs-importTestData';
-const logging = new Logging();
-const log = logging.log(logName);
+const project = process.env.GOOGLE_CLOUD_PROJECT || '';
+const logQwiklabs = 'projects/'+ project + '/logs/qwiklabs-logging';
 
-const resource = {
-  type: 'global',
-};
+const logging = new Logging();
+const log = logging.log(logQwiklabs);
 
 const db = new Firestore();
 
@@ -47,7 +45,16 @@ async function importCsv(csvFileName) {
 
   // A text log entry
   success_message = `Success: importTestData - Wrote ${records.length} records`
-  const entry = log.entry({resource: resource}, {message: `${success_message}`});
+
+  // Construct Log record	
+  const text = "firestore_db";
+  const metadata = {
+    resource: {type: 'global'},
+    logName: logQwiklabs, 
+    severity: 'INFO',
+  }
+	
+  const entry = log.entry(metadata, text);
   log.write([entry]);
 }
 
@@ -57,4 +64,10 @@ if (process.argv.length < 3) {
   process.exit(1);
 }
 
-importCsv(process.argv[2]).catch(e => console.error(e));
+
+if (project === ''){
+  console.log('Set the GOOGLE_CLOUD_PROJECT environment variable');
+} else {
+  // Run the import process	
+  importCsv(process.argv[2]).catch(e => console.error(e));
+}
