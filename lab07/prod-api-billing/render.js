@@ -35,21 +35,19 @@ function defaultFetchOpt() {
 
 // renderRequest creates a new HTTP request with IAM ID Token credential.
 // This token is automatically handled by private Cloud Run (fully managed) and Cloud Functions.
-const renderRequest = async () => {
-  if (!process.env.BILLING_SERVICE_URL) throw Error('BILLING_SERVICE_URL needs to be set.');
-    serviceUrl = process.env.EDITOR_UPSTREAM_RENDER_URL;
+const renderRequest = async (markdown) => {
+//  if (!process.env.EDITOR_UPSTREAM_RENDER_URL) throw Error('EDITOR_UPSTREAM_RENDER_URL needs to be set.');
+//  serviceUrl = process.env.EDITOR_UPSTREAM_RENDER_URL;
 
-  // serviceUrl= 'https://billing-service-st43nxgwmq-uc.a.run.app/billing';
+  serviceUrl= 'https://billing-service-st43nxgwmq-uc.a.run.app/billing';
 
   // Build the request to the Renderer receiving service.
   const serviceRequestOptions = {
     method: 'GET',
-//    mode: 'no-cors',	  
+//    mode: 'cors',	  
     headers: {
-//      'Content-Type': 'application/json'
-      'Content-Type': 'text/plain'
+      'Content-Type': 'application/json'
     },
-//    body: markdown,
     timeout: 3000
   };
 
@@ -75,15 +73,15 @@ const renderRequest = async () => {
 //      {
 //        method: 'GET',
 //        ...defaultFetchOpts()
-//
-//      })
+
+//     })
 
 //    console.log(`Test 1`);	  
 //    test = serviceResponse.json();
 	  
 //    console.log(`Test 2`);	  
 //    console.log(`serviceReponse: ${test.bills[0].month}`);
-//    return serviceResponse.json();
+//    return serviceResponse.json;
   } catch (err) {
     throw Error('request to rendering service failed: ', err);
   };

@@ -40,8 +40,8 @@ app.get('/backend', async(req, res) => {
 //    let report = await fetch(BACKEND_SERVICE)
 //      .then(res => res.json())
 
-    response = bills.json();
-    console.log(`Backend: ${response.bills[0].month}`);	  
+//    response = bills.json();
+//    console.log(`Backend: ${response.bills[0].month}`);	  
 //    res.send({ response });
 
   } catch (error) {
