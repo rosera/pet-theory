@@ -12,6 +12,18 @@ app.listen(port, () => {
   console.log(`Billing Rest API listening on port ${port}`);
 });
 
+app.post('/', async (req, res) => {
+  try {
+    bills = await dataSource.listBilling();
+
+    res.status(200).json({bills});
+  } catch(error) {
+    res.status(400).send(error);
+  }
+
+})
+
+
 // show the Billing data
 app.get('/billing', async (req, res) => {
   try {	
@@ -19,8 +31,8 @@ app.get('/billing', async (req, res) => {
 //      bills = await renderRequest();
 
     // Enable Cors
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");	
+//    res.header("Access-Control-Allow-Origin", "*");
+//    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");	
     res.status(200).json({bills});
   } catch(error) {
     console.log(`Billing: ${error}`);
@@ -42,9 +54,9 @@ app.get('/billing/:ref', async (req, res) => {
 })
 
 
-app.get('/', async (req, res) => {
+//app.get('/', async (req, res) => {
   // Enable Cors
 //  res.header("Access-Control-Allow-Origin", "*");
 //  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");	
-  res.status(200).json({status: 'Billing Rest API: Online'});
-})
+//  res.status(200).json({status: 'Billing Rest API: Online'});
+//})
