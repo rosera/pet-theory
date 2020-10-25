@@ -1,10 +1,6 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
-const fetch = require('node-fetch');
-const request = require('request-promise');
-const renderRequest = require('./render.js');
-
 
 const app = express();
 
@@ -12,8 +8,6 @@ const pathPublicDirectory = path.join(__dirname, './public');
 const pathViews = path.join(__dirname, '/views');
 const pathPartials = path.join(__dirname, '/partials');
 
-const BACKEND_SERVICE = 'https://billing-service-st43nxgwmq-uc.a.run.app/billing';
-const receivingServiceURL= 'https://billing-service-st43nxgwmq-uc.a.run.app/billing';
 
 // Set hbs as the template engine
 app.set('view engine', 'hbs');
@@ -33,19 +27,14 @@ app.get('', (req, res) => {
 
 
 // show the default page
-app.get('/backend', async(req, res) => {
+app.get('/billing', async(req, res) => {
   try {
-    const bills = await renderRequest();
-    	  
-//    let report = await fetch(BACKEND_SERVICE)
-//      .then(res => res.json())
-
-//    response = bills.json();
-//    console.log(`Backend: ${response.bills[0].month}`);	  
-//    res.send({ response });
+    const bills = dataSource.listBillings();
+    res.status(200).json( {label: 'bills', records: bills} );
 
   } catch (error) {
     console.log(`Backend Error: ${error}`);
+    res.status(500).json( {status: 'Server error'} );
   }
 })
 

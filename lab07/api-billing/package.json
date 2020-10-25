@@ -1,5 +1,5 @@
 {
-  "name": "gsp328-cloudrun-challenge-lab",
+  "name": "billing-rest-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,6 @@
   "author": "Rich Rose",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
-    "hbs": "^4.1.1"
+    "express": "^4.17.1"
   }
 }
