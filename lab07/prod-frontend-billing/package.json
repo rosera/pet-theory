@@ -1,0 +1,21 @@
+{
+  "name": "gspxxx-firebase-challenge-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "google-auth-library": "^6.1.2",
+    "got": "^11.8.0",
+    "hbs": "^4.1.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}

@@ -1,0 +1,112 @@
+{"billing": 
+  [
+    {
+     "month": "2020-05",
+     "ref":"123-abc-123",
+     "provider": "TX Medical Ltd",
+     "date":"10/05/2020",
+     "procedure":"Thyroid check",
+     "amount":"110",
+     "status":"Paid"
+    },
+    {
+      "month": "2020-05",
+      "ref":"123-abc-124",
+      "provider": "TX Medical Ltd",
+      "date":"10/05/2020",
+      "procedure":"Blood sample",
+      "amount":"110",
+      "status":"Paid"
+    },
+    {
+      "month": "2020-05",
+      "ref":"456-abc-123",
+      "provider": "Jeffersonian Ltd",
+      "date":"10/05/2020",
+      "procedure":"Blood sample",
+      "amount":"150",
+      "status":"Paid"
+    },
+    {
+      "month": "2020-05",
+      "ref":"789-abc-123",
+      "provider": "St Elsewhere Ltd",
+      "date":"10/05/2020",
+      "procedure":"Heartworm test",
+      "amount":"140",
+      "status":"Paid"
+    },
+    {
+      "month": "2020-06",
+      "ref":"123-abc-125",
+      "provider": "TX Medical Ltd",
+      "date":"10/05/2020",
+      "procedure":"Blood sample",
+      "amount":"110",
+      "status":"Paid"
+    },
+    {
+      "month": "2020-06",
+      "ref":"456-abc-124",
+      "provider": "Jeffersonian Ltd",
+      "date":"10/05/2020",
+      "procedure":"Fecal test",
+      "amount":"230",
+      "status":"Paid"
+    },
+    {
+      "month": "2020-06",
+      "ref":"456-abc-125",
+      "provider": "Jeffersonian Ltd",
+      "date":"10/05/2020",
+      "procedure":"Blood sample",
+      "amount":"150",
+      "status":"Paid"
+    },
+    {
+      "month": "2020-06",
+      "ref":"456-abc-126",
+      "provider": "Jeffersonian Ltd",
+      "date":"10/05/2020",
+      "procedure":"Chemistry Panel",
+      "amount":"340",
+      "status":"Paid"
+    },
+    {
+      "month": "2020-07",
+      "ref":"123-abc-126",
+      "provider": "TX Medical Ltd",
+      "date":"10/05/2020",
+      "procedure":"Thyroid check",
+      "amount":"110",
+      "status":"Unpaid"
+    },
+    {
+      "month": "2020-07",
+      "ref":"456-abc-127",
+      "provider": "Jeffersonian Ltd",
+      "date":"10/05/2020",
+      "procedure":"Urinalysis",
+      "amount":"170",
+      "status":"Unpaid"
+    },
+    {
+      "month": "2020-07",
+      "ref":"789-abc-124",
+      "provider": "St Elsewhere Ltd",
+      "date":"10/05/2020",
+      "procedure":"Chemistry panel",
+      "amount":"300",
+      "status":"Unpaid"
+    },
+    {
+      "month": "2020-07",
+      "ref":"789-abc-125",
+      "provider": "St Elsewhere Ltd",
+      "date":"10/05/2020",
+      "procedure":"Fecal test",
+      "amount":"240",
+      "status":"Unpaid"
+    }
+  ]
+}
