@@ -15,26 +15,41 @@
 // [START run_secure_request]
 
 const {GoogleAuth} = require('google-auth-library');
+const fetch = require('node-fetch');
 const got = require('got');
 const auth = new GoogleAuth();
 
 let client, serviceUrl;
 
+// Build the request to the Renderer receiving service.
+function defaultFetchOpt() {
+  return {
+    method: 'GET',
+    mode: 'cors',	  
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    timeout: 3000
+  }
+}
+
 // renderRequest creates a new HTTP request with IAM ID Token credential.
 // This token is automatically handled by private Cloud Run (fully managed) and Cloud Functions.
-const renderRequest = async (markdown) => { 
-  if (!process.env.BILLING_URL) throw Error('BILLING_URL needs to be set.');
-  
-  serviceUrl = process.env.BILLING_URL;
-//  serviceUrl = 'https://billing-prod-service-4qefqezdta-uc.a.run.app'
+const renderRequest = async () => {
+  if (!process.env.BILLING_SERVICE_URL) throw Error('BILLING_SERVICE_URL needs to be set.');
+    serviceUrl = process.env.EDITOR_UPSTREAM_RENDER_URL;
+
+  // serviceUrl= 'https://billing-service-st43nxgwmq-uc.a.run.app/billing';
 
   // Build the request to the Renderer receiving service.
-  const serviceRequestOptions = { 
-    method: 'POST',
+  const serviceRequestOptions = {
+    method: 'GET',
+//    mode: 'no-cors',	  
     headers: {
+//      'Content-Type': 'application/json'
       'Content-Type': 'text/plain'
     },
-    body: markdown,
+//    body: markdown,
     timeout: 3000
   };
 
@@ -52,12 +67,27 @@ const renderRequest = async (markdown) => {
   try {
     // serviceResponse converts the Markdown plaintext to HTML.
     const serviceResponse = await got(serviceUrl, serviceRequestOptions);
-    return serviceResponse.body;
-  } catch (err) { 
+    console.log(`ServerReponse: ${serviceReponse}`);
+
+    return serviceResponse.json();
+	  //
+//    let serviceResponse = await fetch(serviceUrl, 
+//      {
+//        method: 'GET',
+//        ...defaultFetchOpts()
+//
+//      })
+
+//    console.log(`Test 1`);	  
+//    test = serviceResponse.json();
+	  
+//    console.log(`Test 2`);	  
+//    console.log(`serviceReponse: ${test.bills[0].month}`);
+//    return serviceResponse.json();
+  } catch (err) {
     throw Error('request to rendering service failed: ', err);
   };
 };
-
 
 // [END run_secure_request]
 

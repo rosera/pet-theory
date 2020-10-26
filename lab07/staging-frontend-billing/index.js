@@ -1,10 +1,6 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
-const fetch = require('node-fetch');
-const request = require('request-promise');
-const renderRequest = require('./render.js');
-
 
 const app = express();
 
@@ -30,16 +26,19 @@ app.get('', (req, res) => {
 })
 
 
-app.post('/', async (req, res) => {
+// show the default page
+app.get('/billing', async(req, res) => {
   try {
-    const markdown = 'Test'	  
-    const response = await renderRequest(markdown);
-    res.status(200).send(response);
+    const bills = dataSource.listBillings();
+    res.status(200).json( {label: 'bills', records: bills} );
+
   } catch (error) {
-    console.log(`Error post render function`);	  
-    res.status(800).send(error);	  
+    console.log(`Backend Error: ${error}`);
+    res.status(500).json( {status: 'Server error'} );
   }
 })
+
+
 
 // Listen on a network port
 app.listen(port, () => console.log(`Listening on:${port}`))
