@@ -33,6 +33,9 @@ Qwiklabs Quest based on the presentation "Pet Theory"
 ### [GSP643 Lab 02 - Web Hosting and authentication with Firebase](https://github.com/rosera/pettheory/tree/master/lab02)
 ### [GSP644 Lab 03 - Building a PDF creation service with Cloud Run](https://github.com/rosera/pettheory/tree/master/lab03) 
 ### [GSP645 Lab 04 - Developing a REST API with Cloud Run](https://github.com/rosera/pettheory/tree/master/lab04)
-### [GSP650 Lab 05 - Building an asynchronous reporting service](https://github.com/rosera/pettheory/tree/master/lab05)  
+### [GSP344 Lab 06 - Firebase and Cloud Run Challenge Lab](https://github.com/rosera/pettheory/tree/master/lab06)
+### [GSP328 Lab 07 - Cloud Run Challenge Lab](https://github.com/rosera/pettheory/tree/master/lab07)
+### [GSP761 Lab 08 - Developing a REST API with Go and Cloud Run](https://github.com/rosera/pettheory/tree/master/lab08)
+
 
 
