@@ -36,6 +36,7 @@ Qwiklabs Quest based on the presentation "Pet Theory"
 ### [GSP344 Lab 06 - Firebase and Cloud Run Challenge Lab](https://github.com/rosera/pettheory/tree/master/lab06)
 ### [GSP328 Lab 07 - Cloud Run Challenge Lab](https://github.com/rosera/pettheory/tree/master/lab07)
 ### [GSP761 Lab 08 - Developing a REST API with Go and Cloud Run](https://github.com/rosera/pettheory/tree/master/lab08)
+### [GSPXXX Lab 09 - Traffic Management with Cloud Run (Draft)](https://github.com/rosera/pettheory/tree/master/lab09)
 
 
 
