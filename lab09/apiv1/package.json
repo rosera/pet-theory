@@ -1,0 +1,15 @@
+{
+  "name": "test-microservice",
+  "version": "1.0.0",
+  "description": "Example microservice traffic management",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Rich Rose",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
