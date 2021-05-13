@@ -29,5 +29,5 @@ app.get('', (req, res) => {
 })
 
 app.get('/help', async (req, res) => {
-  res.status(200).send('API Microservice example');
+  res.status(200).send('API Microservice example: v1');
 })

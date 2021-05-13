@@ -28,6 +28,6 @@ app.get('', (req, res) => {
   res.render('index');
 })
 
-app.get('/', async (req, res) => {
-  res.status(200).send('API Microservice example');
+app.get('/help', async (req, res) => {
+  res.status(200).send('API Microservice example: v2');
 })

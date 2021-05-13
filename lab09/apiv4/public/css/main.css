@@ -1,0 +1,8 @@
+/*! Output a Blue Background */
+
+html {
+    color: #FFF;
+    font-size: 1em;
+    line-height: 1.4;
+	  background-color: #00F;
+}
