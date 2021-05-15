@@ -22,7 +22,7 @@ Social Media:
 * LinkedIn:
 * Instagram:
 * Facebook:
-* Youtube: https://www.youtube.com/watch?v=lscLHHwFKAA
+* Youtube: https://www.youtube.com/playlist?list=PLIivdWyY5sqJwq_pgOxcHzusWjXDVCEiX
 
 # Description: 
 Qwiklabs Quest based on the presentation "Pet Theory"
@@ -36,7 +36,7 @@ Qwiklabs Quest based on the presentation "Pet Theory"
 ### [GSP344 Lab 06 - Firebase and Cloud Run Challenge Lab](https://github.com/rosera/pettheory/tree/master/lab06)
 ### [GSP328 Lab 07 - Cloud Run Challenge Lab](https://github.com/rosera/pettheory/tree/master/lab07)
 ### [GSP761 Lab 08 - Developing a REST API with Go and Cloud Run](https://github.com/rosera/pettheory/tree/master/lab08)
-### [GSPXXX Lab 09 - Traffic Management with Cloud Run (Draft)](https://github.com/rosera/pettheory/tree/master/lab09)
+### [GSP884 Lab 09 - Traffic Management with Cloud Run](https://github.com/rosera/pettheory/tree/master/lab09)
 
 
 
