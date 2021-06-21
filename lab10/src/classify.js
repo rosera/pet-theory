@@ -1,8 +1,10 @@
 import * as tf from "@tensorflow/tfjs";
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+//import "core-js/stable";
+import "@babel/polyfill";
+//import "regenerator-runtime/runtime";
 import { CLASSES } from "./labels.js";
 
+const photo = document.getElementById("file");
 const classify = document.getElementById("submit");
 const modelPath =
     "https://tfhub.dev/tensorflow/tfjs-model/ssd_mobilenet_v2/1/default/1";
@@ -38,6 +40,16 @@ async function disposeModel(){
      justValues,
    ]);
 }
+
+
+photo.addEventListener('change', (event) => {
+  console.log("Load Image");
+
+  let image = document.getElementById('output');
+  let ctx = detection.getContext("2d");
+  ctx.clearRect(0, 0, image.width, image.height);
+  image.src = URL.createObjectURL(event.target.files[0]);
+})
 
 classify.addEventListener('click', (event) => {
   let btnPhoto  = document.getElementById('output');

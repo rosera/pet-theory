@@ -4,23 +4,22 @@
   "description": "Classification of images using Tensorflow.js and Cloud Run",
   "main": "index.html",
   "scripts": {
-    "start": "node index.htmindex.html --open",
-    "build": "parcel build index.html basics.html"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "dependencies": {
-    "@tensorflow/tfjs": "2.7.0",
+    "@babel/polyfill": "^7.12.1",
+    "@tensorflow/tfjs": "^2.7.0",
     "@tensorflow/tfjs-node": "^3.0.0",
-    "core-js": "^3.8.0",
-    "regenerator-runtime": "^0.13.7"
+    "parcel-plugin-static-files-copy": "^2.6.0"
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1",
-    "parcel-plugin-static-files-copy": "^2.5.0"
+    "parcel": "^2.0.0-beta.3.1"
   },
   "keywords": [
     "TensorFlow.js"
   ],
-  "author": "Gant Laborde",
-  "license": "UNLICENSED"
+  "author": "Rich Rose",
+  "license": "MIT"
 }

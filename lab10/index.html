@@ -9,7 +9,7 @@
   <body>
     <h1>Tensorflow.js Example</h1>
     <p>1. Choose an image</p>
-    <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="border: none;"></p>
+    <p><input type="file"  accept="image/*" name="image" id="file" style="border: none;"></p>
     <p>2. Perform ML classification</p>
     <p><input type="submit" class="classify-button" id="submit" value="Classify image"></p>
 
@@ -18,13 +18,6 @@
       <canvas id="detection" style="position: absolute; left: 0;"></canvas>
     </div>
     <div id="app"></div>
-    <script>
-      let loadFile = function(event) {
-        let image = document.getElementById('output');
-        let ctx = detection.getContext("2d");
-        ctx.clearRect(0, 0, image.width, image.height);
-        image.src = URL.createObjectURL(event.target.files[0]);
-      };
     </script>
     <script src="src/classify.js"></script>
   </body>
