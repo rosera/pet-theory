@@ -4,7 +4,7 @@
   "description": "Classification of images using Tensorflow.js and Cloud Run",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
+    "start": "parcel index.html --open --port 8080",
     "build": "parcel build index.html"
   },
   "dependencies": {
