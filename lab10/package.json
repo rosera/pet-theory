@@ -1,10 +1,10 @@
 {
-  "name": "simple-npm-example",
+  "name": "classify-image",
   "version": "1.0.0",
-  "description": "Showing what an NPM version would look like",
+  "description": "Classification of images using Tensorflow.js and Cloud Run",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
+    "start": "node index.htmindex.html --open",
     "build": "parcel build index.html basics.html"
   },
   "dependencies": {
