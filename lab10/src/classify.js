@@ -1,7 +1,6 @@
 import * as tf from "@tensorflow/tfjs";
-//import "core-js/stable";
-import "@babel/polyfill";
-//import "regenerator-runtime/runtime";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 import { CLASSES } from "./labels.js";
 
 const photo = document.getElementById("file");
