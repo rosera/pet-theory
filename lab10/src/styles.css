@@ -16,10 +16,16 @@ $footer: #f7f7f7;
 
 body {
   font-family: 'Barlow', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.5;
+  font-size: 2.00rem;
+  line-height: 1.75;
   color: $gray;
   background: $white;
+  text-rendering: optimizeLegibility;
+}
+
+input {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.33rem;
   text-rendering: optimizeLegibility;
 }
 
