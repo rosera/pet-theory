@@ -12,7 +12,7 @@ async function createTestData(recordCount) {
   var f = fs.createWriteStream(fileName);
   f.write('id,name,email,phone\n')
   for (let i=0; i<recordCount; i++) {
-    const id = faker.datatype.number();
+    const id = faker.random.number();
     const firstName = faker.name.firstName();
     const lastName = faker.name.lastName();
     const name = `${firstName} ${lastName}`;
