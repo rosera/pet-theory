@@ -29,15 +29,16 @@ Qwiklabs Quest based on the presentation "Pet Theory"
 
 # Labs
 
-### [GSP642 Lab 01 - Migrating to a Firestore database](https://github.com/rosera/pettheory/tree/master/lab01) 
-### [GSP643 Lab 02 - Web Hosting and authentication with Firebase](https://github.com/rosera/pettheory/tree/master/lab02)
-### [GSP644 Lab 03 - Building a PDF creation service with Cloud Run](https://github.com/rosera/pettheory/tree/master/lab03) 
-### [GSP645 Lab 04 - Developing a REST API with Cloud Run](https://github.com/rosera/pettheory/tree/master/lab04)
-### [GSP344 Lab 06 - Firebase and Cloud Run Challenge Lab](https://github.com/rosera/pettheory/tree/master/lab06)
-### [GSP328 Lab 07 - Cloud Run Challenge Lab](https://github.com/rosera/pettheory/tree/master/lab07)
-### [GSP761 Lab 08 - Developing a REST API with Go and Cloud Run](https://github.com/rosera/pettheory/tree/master/lab08)
-### [GSP884 Lab 09 - Traffic Management with Cloud Run](https://github.com/rosera/pettheory/tree/master/lab09)
-### [GSPXXX Lab 10 - Image Classification with Cloud Run](https://github.com/rosera/pettheory/tree/master/lab10)
+### [GSP642 Lab 01 - Migrating to a Firestore database](https://github.com/rosera/pettheory/tree/main/lab01) 
+### [GSP643 Lab 02 - Web Hosting and authentication with Firebase](https://github.com/rosera/pettheory/tree/main/lab02)
+### [GSP644 Lab 03 - Building a PDF creation service with Cloud Run](https://github.com/rosera/pettheory/tree/main/lab03) 
+### [GSP645 Lab 04 - Developing a REST API with Cloud Run](https://github.com/rosera/pettheory/tree/main/lab04)
+### [GSP650 Lab 05 - Building an asynchronous reporting service](https://github.com/rosera/pettheory/tree/main/lab05)
+### [GSP344 Lab 06 - Firebase and Cloud Run Challenge Lab](https://github.com/rosera/pettheory/tree/main/lab06)
+### [GSP328 Lab 07 - Cloud Run Challenge Lab](https://github.com/rosera/pettheory/tree/main/lab07)
+### [GSP761 Lab 08 - Developing a REST API with Go and Cloud Run](https://github.com/rosera/pettheory/tree/main/lab08)
+### [GSP884 Lab 09 - Traffic Management with Cloud Run](https://github.com/rosera/pettheory/tree/main/lab09)
+### [GSPXXX Lab 10 - Image Classification with Cloud Run](https://github.com/rosera/pettheory/tree/main/lab10)
 
 
 
