@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const Firestore = require('@google-cloud/firestore');
 
 const port = process.env.PORT || 8080;
@@ -6,6 +7,8 @@ const db = new Firestore();
 const app = express();
 
 app.use(express.json());
+// Allow all CORS requests
+app.use(cors());
 
 app.listen(port, () => {
   console.log(`Netflix Rest API listening on port ${port}`);
