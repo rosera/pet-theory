@@ -32,8 +32,7 @@ app.get('', (req, res) => {
 
 app.post('/', async (req, res) => {
   try {
-    const markdown = 'Test'	  
-    const response = await renderRequest(markdown);
+    const response = await renderRequest();
     res.status(200).send(response);
   } catch (error) {
     console.log(`Error post render function`);	  

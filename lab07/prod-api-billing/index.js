@@ -12,7 +12,7 @@ app.listen(port, () => {
   console.log(`Billing Rest API listening on port ${port}`);
 });
 
-app.post('/', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     bills = await dataSource.listBilling();
 

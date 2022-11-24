@@ -22,19 +22,18 @@ let client, serviceUrl;
 
 // renderRequest creates a new HTTP request with IAM ID Token credential.
 // This token is automatically handled by private Cloud Run (fully managed) and Cloud Functions.
-const renderRequest = async (markdown) => { 
+const renderRequest = async () => {
   if (!process.env.BILLING_URL) throw Error('BILLING_URL needs to be set.');
   
   serviceUrl = process.env.BILLING_URL;
 //  serviceUrl = 'https://billing-prod-service-4qefqezdta-uc.a.run.app'
 
   // Build the request to the Renderer receiving service.
-  const serviceRequestOptions = { 
-    method: 'POST',
+  const serviceRequestOptions = {
+    method: 'GET',
     headers: {
       'Content-Type': 'text/plain'
     },
-    body: markdown,
     timeout: 3000
   };
 
