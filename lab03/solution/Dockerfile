@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:16
 RUN apt-get update -y \
     && apt-get install -y libreoffice \
     && apt-get clean
