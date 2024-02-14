@@ -10,8 +10,8 @@
   "author": "Patrick - IT",
   "license": "MIT",
   "dependencies": {
-    "@google-cloud/firestore": "^2.2.9",
-    "csv-parse": "^4.4.5",
-    "faker": "^4.1.0"
+    "@google-cloud/firestore": "^7.3.0",
+    "csv-parse": "^5.5.3",
+    "faker": "^5.5.3"
   }
 }
