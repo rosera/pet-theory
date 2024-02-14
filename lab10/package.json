@@ -8,13 +8,13 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@tensorflow/tfjs": "^2.7.0",
-    "@tensorflow/tfjs-node": "^3.0.0",
-    "core-js": "^3.8.0",
-    "regenerator-runtime": "^0.13.7"
+    "@tensorflow/tfjs": "^4.17.0",
+    "@tensorflow/tfjs-node": "^4.17.0",
+    "core-js": "^3.36.0",
+    "regenerator-runtime": "^0.14.1"
   },
   "devDependencies": {
-    "@babel/core": "7.2.0",
+    "@babel/core": "7.23.9",
     "parcel-bundler": "^1.6.1",
     "parcel-plugin-static-files-copy": "^2.6.0"
   },
