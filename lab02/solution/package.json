@@ -10,6 +10,6 @@
   "author": "Patrick - IT",
   "license": "MIT",
   "dependencies": {
-    "firebase-tools": "^7.4.0"
+    "firebase-tools": "^13.2.1"
   }
 }
