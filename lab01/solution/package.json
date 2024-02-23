@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@google-cloud/firestore": "^7.3.0",
+    "@google-cloud/logging": "^11.0.0",
     "csv-parse": "^5.5.3",
     "faker": "^5.5.3"
   }
