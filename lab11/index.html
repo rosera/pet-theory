@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AutoML Example</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+
+  <body>
+    <h1>AutoML Image</h1>
+    <p>1. Choose an image</p>
+    <p><input type="file"  accept="image/*" name="image" id="file" style="border: none;"></p>
+    <p>2. Perform ML classification</p>
+    <p><input type="submit" class="classify-button" id="submit" value="Classify image"></p>
+
+    <div class="gallery">
+      <img id="output" height="100%"/>
+      <canvas id="detection" style="position: absolute; left: 0;"></canvas>
+    </div>
+    <div id="app"></div>
+    <script src="src/classify.js"></script>
+  </body>
+</html>

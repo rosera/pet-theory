@@ -1,0 +1,14 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', '${_IMAGE_REPO}/$PROJECT_ID/${_IMAGE_NAME}:${_IMAGE_VERSION}',
+           '-t', '${_IMAGE_REPO}/$PROJECT_ID/${_IMAGE_NAME}',
+           '.']
+substitutions:           
+  _IMAGE_VERSION: 0.1.1
+  _IMAGE_NAME: automl-image-frontend 
+  _IMAGE_REPO: gcr.io 
+
+images:
+    - '${_IMAGE_REPO}/$PROJECT_ID/${_IMAGE_NAME}:latest'
+    - '${_IMAGE_REPO}/$PROJECT_ID/${_IMAGE_NAME}:${_IMAGE_VERSION}'
+tags: ['automl-gateway']
