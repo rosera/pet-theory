@@ -1,6 +1,5 @@
-const {promisify} = require('util');
-const parse       = promisify(require('csv-parse'));
-const {readFile}  = require('fs').promises;
+const csv = require('csv-parse');
+const fs  = require('fs');
 
 if (process.argv.length < 3) {
   console.error('Please include a path to a csv file');
@@ -14,17 +13,23 @@ function writeToDatabase(records) {
   return ;
 }
 
-async function importCsv(csvFileName) {
-  const fileContents = await readFile(csvFileName, 'utf8');
-  const records = await parse(fileContents, { columns: true });
-  try {
-    await writeToDatabase(records);
-  }
-  catch (e) {
-    console.error(e);
-    process.exit(1);
-  }
-  console.log(`Wrote ${records.length} records`);
+async function importCsv(csvFilename) {
+  const parser = csv.parse({ columns: true, delimiter: ',' }, async function (err, records) {
+    if (err) {
+      console.error('Error parsing CSV:', err);
+      return;
+    }
+    try {
+      console.log(`Call write to Firestore`);
+      await writeToDatabase(records);
+      console.log(`Wrote ${records.length} records`);
+    } catch (e) {
+      console.error(e);
+      process.exit(1);
+    }
+  }); 
+
+  await fs.createReadStream(csvFilename).pipe(parser);
 }
 
 importCsv(process.argv[2]).catch(e => console.error(e));
