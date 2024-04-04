@@ -15,7 +15,7 @@
 // [START run_secure_request]
 
 const {GoogleAuth} = require('google-auth-library');
-const got = require('got');
+const got = import('got');
 const auth = new GoogleAuth();
 
 let client, serviceUrl;
