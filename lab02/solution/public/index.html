@@ -21,6 +21,8 @@
           }
         },
         signInSuccessUrl: 'customer.html',
+        // https://firebase.google.com/docs/auth/web/redirect-best-practices?hl=en&authuser=0&_gl=1*qtvb1r*_ga*ODMxMTQ5NDI2LjE3MjEwMjgxMDg.*_ga_CW55HF8NVT*MTcyMTAyODEwOC4xLjEuMTcyMTAzMDUxMC42MC4wLjA.
+        signInFlow: 'popup', // Enforce popup authentication
         signInOptions: [
           firebase.auth.GoogleAuthProvider.PROVIDER_ID,
           firebase.auth.FacebookAuthProvider.PROVIDER_ID,
