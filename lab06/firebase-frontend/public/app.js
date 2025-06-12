@@ -4,6 +4,18 @@
 const REST_API_SERVICE = "data/netflix.json"
 //const REST_API_SERVICE = "https://XXXX-SERVICE.run.app/2020" 
 
+const year = 2019;
+const API_URL = `${REST_API_SERVICE}/${year}`;
+
+fetch(API_URL)
+  .then(res => res.json())
+  .then(data => {
+    // Render Firestore dataset into the page
+    console.log("Fetched Data:", data);
+    renderData(data);
+  })
+  .catch(err => console.error("Error fetching dataset:", err));
+
 function setTileData(items){
   const dynamicView = items.map((item) => {
     return `<tr>
