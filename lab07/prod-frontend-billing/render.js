@@ -15,7 +15,7 @@
 // [START run_secure_request]
 
 const {GoogleAuth} = require('google-auth-library');
-const got = import('got');
+const {got} = require('got');
 const auth = new GoogleAuth();
 
 let client, serviceUrl;
@@ -34,8 +34,7 @@ const renderRequest = async (markdown) => {
     headers: {
       'Content-Type': 'text/plain'
     },
-    body: markdown,
-    timeout: 3000
+    body: markdown
   };
 
   try {
